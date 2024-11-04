@@ -1,0 +1,149 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+
+    margin-top: 10px;
+    padding: 10px 20px 20px 20px;
+    height: 230px;
+    width: calc(100% - 50px);
+
+}
+
+footer .footer-inner {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* infosection */
+footer .footer-inner .infosection {
+    width: fit-content;
+    height: fit-content;
+}
+
+footer .footer-inner .infosection h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    text-wrap: nowrap;
+
+    color: #1E56A0;
+}
+
+/* products section */
+footer .footer-inner .productssection {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    gap: 5px;
+}
+
+footer .footer-inner .heading {
+    grid-column: 1/3;
+    padding: 0px 0px 5px 5px;
+    height: min-content;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6vw;
+
+    color: #1D71B8;
+
+    border-bottom: 1px rgba(0, 0, 0, .5) solid;
+}
+
+.service-link {
+    user-select: none;
+    width: 160px;
+    height: 20px;
+    padding: 5px;
+
+    border-radius: 5px;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+
+    transition: all .1s linear;
+    color: #373A40;
+}
+
+.service-link svg {opacity: 0; transition: opacity .1s linear;}
+
+footer .footer-inner .footer-link {
+    width: 15vw;
+    height: 20px;
+    padding: .5vw 1vw;
+
+    border-radius: 10px;
+    font-size: 1.1vw;
+    line-height: 21px;
+
+}
+
+footer .footer-inner .productssection .footer-link svg {opacity: 0; transition: all .1s linear;}
+
+footer .footer-inner .productssection .footer-link svg.shown { opacity: 1; }
+/* company section */
+
+footer .footer-inner .companysection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+footer .footer-inner .companysection .footer-link {
+    width: 160px;
+}
+
+
+/* info and social */
+footer .info-and-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+footer .info-and-social .address-inc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer .info-and-social .address-inc .address {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .8);
+}
+
+footer .info-and-social .address-inc .inc {
+    font-size: 14px;
+    color: rgb(0, 0, 0)
+}
+
+footer .info-and-social .social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

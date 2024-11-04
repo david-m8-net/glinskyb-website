@@ -1,0 +1,80 @@
+.accelerate {
+    width: 100%;
+    height: fit-content;
+    margin-top: 80px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.accelerate img {
+    z-index: -1;
+    filter: brightness(.5);
+    width: 100vw;
+}
+
+.accelerate h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2vw;
+    line-height: 62px;
+
+    color: #FFFFFF;
+}
+
+.accelerate p {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 25px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.accelerate .button {
+    user-select: none;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    border-radius: 25px;
+    gap: 10px;
+    height: 50px;
+    width: fit-content;
+    background-color: #1E56A0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.accelerate .button span {
+    margin-left: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+    color: #FFFFFF;
+
+
+}
+
+.accelerate .button svg {
+    margin-right: 5px;
+}

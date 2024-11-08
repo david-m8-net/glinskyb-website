@@ -29,3 +29,12 @@ const base_word_alternatingheading = document.getElementById('alternativesec-bas
 window.addEventListener('resize', () => {
     base_word_alternatingheading.parentElement.offsetHeight = getComputedStyle(base_word_alternatingheading).height
 })
+
+
+// best products
+const products = document.getElementsByClassName('product-obj')
+Array.from(products).forEach((product) => {
+    product.addEventListener('click', () => {
+        window.location.pathname = product.children[2].children[0].getAttribute('href');
+    })
+})

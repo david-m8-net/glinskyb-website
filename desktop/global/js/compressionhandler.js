@@ -1,5 +1,4 @@
 const images = document.getElementsByTagName('img');
-console.log(images)
 
 function userperspectivechanged() {
     Array.from(images).forEach((image) => {
@@ -11,5 +10,5 @@ function userperspectivechanged() {
     })
 }
 
-userperspectivechanged()
+userperspectivechanged();
 window.addEventListener('scroll', userperspectivechanged)

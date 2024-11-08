@@ -10,7 +10,7 @@ const services = document.getElementsByClassName('service-link')
 
 // logo - link
 document.getElementById('navlogo').addEventListener('click', () => {
-    window.location.href = 'https://dy4tpgf2dyah4.cloudfront.net/home.html'
+    window.location.href = 'https://dy4tpgf2dyah4.cloudfront.net/index.html'
 })
 
 document.getElementById('navaboutlink').addEventListener('click', () => {

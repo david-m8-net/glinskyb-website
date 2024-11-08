@@ -69,7 +69,7 @@ for (let i = 0; i < services.length; i++) {
     })
     
     services[i].addEventListener('click', () => {
-        window.location.pathname = 'products/' + serv_links[services[i].children[0].textContent]
+        window.location.pathname = serv_links[services[i].children[0].textContent]
 
     })
     
@@ -149,13 +149,6 @@ function value_changed() {
                 newchild.style.backgroundColor = 'transparent';
                 newchild.children[0].style.color = '#373A40';
                 newchild.children[1].style.opacity = '0';
-        
-            })
-            
-            newchild.addEventListener('click', () => {
-                console.log(window.location.pathname)
-                // if (data[key].href.includes('#')) { document.querySelector(data[key].href).scrollIntoView({behavior: 'smooth', block: 'start'}) }
-                // else { window.location.pathname = 'products/' + data[key].href; }
         
             })
 

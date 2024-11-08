@@ -23,3 +23,9 @@ function alter_serv_name() {
 }
 
 setInterval(alter_serv_name, 5000);
+
+
+const base_word_alternatingheading = document.getElementById('alternativesec-baseword')
+window.addEventListener('resize', () => {
+    base_word_alternatingheading.parentElement.offsetHeight = getComputedStyle(base_word_alternatingheading).height
+})

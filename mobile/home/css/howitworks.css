@@ -1,0 +1,101 @@
+.howitworks .inner {
+    width: calc(100% - 50px);
+    height: fit-content;
+    margin: 0px auto;
+
+    display: grid;
+    grid-template-rows: 3fr;
+    gap: 20px;
+}
+
+.howitworks .inner .step {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.howitworks .inner .thinborder {
+    width: 80%;
+}
+
+.howitworks .inner .step .top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    
+    color: rgba(0, 0, 0, .8);
+    align-items: center;
+}
+
+.howitworks .inner .step .top .svg-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #D6E4F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howitworks .inner .step .top .stepcount {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.howitworks .inner .step .description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+
+    width: 80%;
+    text-align: left;
+    margin-left: 16px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.howitworks .inner .step .ourproducts-button {
+    width: fit-content;
+    height: 14px;
+
+    border-radius: 10px;
+    background-color: #4379F2;
+    padding: 8px 10px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9em;
+    line-height: .9em;
+    color: rgba(255, 255, 255, 1);
+
+    margin-left: 15px;
+    user-select: none;
+}
+
+.howitworks .inner .step .ourproducts-button svg {
+    width: 15px;
+    height: 15px;
+}

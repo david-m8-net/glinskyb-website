@@ -1,0 +1,159 @@
+.heropage {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+
+.heropage .backgound-img-container {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+    z-index: 0;
+}
+
+.heropage .backgound-img-container .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+
+    background: linear-gradient(180deg, rgba(53, 114, 239, .8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.heropage .backgound-img-container img {
+    height: 100%;
+}
+
+
+/* heading */
+.heropage .heading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: fit-content;
+}
+
+.heropage .heading .text {
+    width: 100%;
+}
+
+.heropage .heading .text h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 16px;
+
+    color: #eee;
+    text-wrap: nowrap;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+}
+
+.heropage .heading .text h1 .highlighted {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.5vw;
+    line-height: 18px;
+    color: #fff;
+}
+
+.heropage .heading .scrolldown {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.heropage .heading .scrolldown svg {
+    width: 30px;
+    height: 30px;
+    margin: 0px auto;
+}
+
+.heropage .feedback {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgba(167, 230, 255, 0.6) 0%, rgba(58, 190, 249, 0.6) 100%);
+    box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: rgba(255, 255, 255, .8);
+}
+
+.heropage .feedback .photo-container {
+    position: absolute;
+    width: 15vw;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 3px solid white;
+
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.heropage .feedback .photo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.heropage .feedback .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    height: fit-content;
+    margin: 15px 20px 15px 20px;
+}
+
+.heropage .feedback .top .name {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.heropage .feedback .top .occupation {
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.heropage .feedback .text {
+    font-size: 16px;
+    font-weight: 800;
+    font-style: italic;
+
+    width: calc(100% - 70px);
+    margin: 0px 40px 20px 30px;
+}

@@ -1,0 +1,116 @@
+nav {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    
+    background-color: #eee;
+    user-select: none;
+}
+
+.logo {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    text-align: left ;
+    align-items: center;
+    gap: 6px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-wrap: nowrap;
+
+    color: #373A40;
+    user-select: none;
+}
+
+nav .logo {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav .moremenu {
+    position: absolute;
+    left: 3px; top: 3px;
+
+    height: 54px;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color .2s linear;
+}
+
+nav .moremenu-display {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    padding: 60px 0px 0px 60px;
+    z-index: 2;
+
+    width: calc(100vw - 60px);
+    height: calc(100vh - 120px);
+    background: linear-gradient(180deg, #EEEEEE 40%, #AEE8FF 100%);
+
+}
+
+nav .moremenu-display .inner-container {
+    width: 100%;
+    height: 100%;
+     
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+nav .moremenu-display .inner-container a {
+    color: #0B48C5;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+nav .moremenu-display .inner-container .moremenu-section {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+nav .moremenu-display .inner-container .moremenu-section span {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* close button */
+nav .moremenu-display .inner-container .closebutton {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

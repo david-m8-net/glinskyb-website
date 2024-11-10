@@ -9,7 +9,6 @@ nav {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     z-index: 10;
     backdrop-filter: blur(20px);
@@ -94,6 +93,8 @@ nav .links {
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    margin-left: 30px;
+
     
     color: #373A40;
     font-family: Arial, Helvetica, sans-serif;
@@ -126,6 +127,8 @@ nav .links .linkobj svg { transition: transform .2s linear;}
 
 /* account */
 nav .account {
+    position: absolute;
+    right: 10px;
     width: fit-content;
     height: 50px;
 

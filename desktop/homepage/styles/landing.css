@@ -63,7 +63,7 @@
     row-gap: 5px;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1.8vw;
     font-style: normal;
     font-weight: 400;
     color: #163172;
@@ -79,7 +79,7 @@
     row-gap: 10px;
     color: #1D71B8;
 
-    margin-top: 50px;
+    margin: 50px 0px 30px 0px;
     
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -118,6 +118,5 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    right: 0px;
     height: 100%;
 }

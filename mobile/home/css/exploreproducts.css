@@ -10,11 +10,12 @@
     height: 30px;
 }
 
-.exploreproducts #arrowleft { left: 10px; }
-.exploreproducts #arrowright { right: 10px; }
+.exploreproducts #right { right: 10px; }
+.exploreproducts #left { left: 10px; }
 
 
 .exploreproducts .inner {
+    position: relative;
     width: 75%;
     height: fit-content;
     margin: 10px auto;
@@ -24,9 +25,37 @@
     overflow: hidden;
 }
 
-/* .exploreproducts .inner .product-obj {
+.exploreproducts .inner .product-obj {
+    display: none;
+    position: relative;
+    height: fit-content;
+    padding-bottom: 50px;
+}
 
-} */
+.exploreproducts .inner .shown {
+    display: block;
+}
+
+.exploreproducts .inner #blueRectangle {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: #4379F2;
+    width: calc(100% - 40px);
+    height: 40px;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.exploreproducts .inner #blueRectangle svg {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .exploreproducts .inner .product-obj .picture {
     width: calc(100% - 20px);
@@ -34,7 +63,9 @@
     overflow: hidden;
     border-radius: 20px;
     position: relative;
+    user-select: none;
     margin: 10px;
+    z-index: 0;
 }
 
 .exploreproducts .inner .product-obj .picture img {
@@ -65,15 +96,19 @@
     font-size: 14px;
     line-height: 14px;
     text-align: left;
+    width: 90%;
 
     color: rgba(0, 0, 0, 0.8);
     margin: 0px 0px 20px 20px;
 }
 
 .exploreproducts .inner .learnmore-button {
-    width: calc(100% - 50px);
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
     height: 40px;
-    margin: 0px 25px 15px 25px;
     
     background-color: #4379F2;
     color: #fff;
@@ -82,11 +117,13 @@
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    user-select: none;
 
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    z-index: 1;
 }
 
 .exploreproducts .dots {
@@ -109,3 +146,31 @@
 }
 
 .exploreproducts .dots .selected { background-color: #4379F2;}
+
+/* animation */
+.explore-change-slide-animate {
+    animation: explorechangeslideanimation 1s ease forwards;
+}
+
+@keyframes explorechangeslideanimation {
+    20% {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        bottom: 10px;
+        z-index: 10;
+    }
+
+    80% {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        bottom: 10px;
+    }
+
+    100% {
+        width: calc(100% - 40px);
+        height: 40px;
+        bottom: 15px;
+        z-index: 1;
+    }
+    
+}

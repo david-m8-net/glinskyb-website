@@ -12,6 +12,7 @@ body {
 }
 
 .section {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,4 +33,29 @@ body {
     line-height: 36px;
 
     color: #163172;
+}
+
+
+/* firstdisplayanimation */
+.firstdisplayanimated {
+    animation: firstdisplayanimation .8s ease forwards;
+}
+
+@keyframes firstdisplayanimation {
+    0% {
+        transform: scale(0.8) var(--transform, scale(0.95));
+        opacity: 0;
+        filter: blur(40px);
+    }
+
+    80% {
+        transform: scale(1.05) var(--transform, scale(1));
+    }
+    
+    100% {
+        opacity: 1;
+        filter: none;
+        transform: scale(1) var(--transform, scale(1));
+
+    }
 }

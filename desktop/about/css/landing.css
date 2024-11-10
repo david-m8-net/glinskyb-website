@@ -1,0 +1,107 @@
+.landing {
+    position: relative;
+    width: 100%;
+    max-height: calc(100vh - 60px);
+
+
+    background: linear-gradient(180deg, #587A97 0%, #C5E2F3 100%);
+    overflow: hidden;
+
+}
+
+.landing img {
+    position: absolute;
+    top: 135px;
+    left: 0px;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.landing .heading {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    width: 665px;
+
+}
+
+.landing .heading h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #FFFFFF;
+
+}
+
+.landing .subheading {
+    position: absolute;
+    top: 180px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #EEEEEE;
+    z-index: 2;
+    gap: 50px;
+}
+
+.landing .subheading .getstarted-button {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    color: #FFFFFF;
+    background-color: #3572EF;
+}
+
+.landing .subheading .getstarted-button:hover {
+    background-color: #2A5ABE;
+}
+
+
+
+/* mission */
+.slide1 {
+    width: 50%;
+    height: fit-content;
+    margin: 50px auto 50px auto;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
+
+
+}
+
+.slide1 h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #163172;
+    margin-bottom: 10px;
+}
+

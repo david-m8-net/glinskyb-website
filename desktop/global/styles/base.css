@@ -1,0 +1,31 @@
+:root {
+    background-color: #F5F7F8;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* user-select: none; */
+    position: relative;
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
+
+p {margin: 0px;}
+h1 {margin: 0px;}
+
+.m-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5px;
+}
+
+.m-subheading {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #797979;
+}

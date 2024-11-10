@@ -1,0 +1,243 @@
+nav {
+    user-select: none;
+    position: sticky;
+    top: 0; left: 0;
+    width: calc(100% - 20px);
+    height: 40px;
+    background-color: rgba(245, 247, 248, .8);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    backdrop-filter: blur(20px);
+}
+
+nav .logoandsearch {
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+
+nav .logoandsearch .logo {
+    position: relative;
+
+    display: inherit;
+    flex-direction: row;
+    gap: 10px;
+    height: 40px; width: 315px;
+}
+
+nav .logoandsearch .logo h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+
+    line-height: 40px;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    color: #1D71B8;
+    margin: 0;
+}
+
+
+
+/* search */
+nav .logoandsearch .search {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+    width: 140px;
+    height: 20px;
+
+    border-radius: 10px;
+    border: .5px rgba(0, 0, 0, .2) solid;
+    background-color: #eeeeee;
+    transition: background-color linear .2s;
+}
+
+nav .logoandsearch .search input {
+    width: 115px;
+    height: 20px;
+    margin-left: 5px;
+
+    background-color: transparent;
+    border: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+}
+
+nav .logoandsearch .search input:focus {
+    outline: none;
+}
+
+
+
+/* links */
+nav .links {
+    width: fit-content;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    
+    color: #373A40;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(min(1.3vw, 18px));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+
+}
+
+nav .links .linkobj {
+    width: fit-content;
+    position: relative;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 6px;
+}
+
+nav .links .linkobj p {
+    margin: 0px;
+    transition: color .2s linear;
+}
+
+nav .links .linkobj svg { transition: transform .2s linear;}
+
+
+/* account */
+nav .account {
+    width: fit-content;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+nav .account .accountobj {
+    width: fit-content;
+    height: 40px;
+
+    background-color: #eeeeee;
+    border-radius: 25px;
+    border: solid rgba(0, 0, 0, .2) .5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 5px 5px 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1D71B8;
+}
+
+nav .account .accountobj img {
+    width: 40px;
+    height: 40px;
+    border: solid rgba(0, 0, 0, .3) .2px;
+    border-radius: 50%;
+}
+
+    /* cart */
+nav .account .cart {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+
+/* link popup */
+
+nav .links .linkobj .services-popup {
+    position: absolute;
+
+    bottom: 0px;
+    transform: translateY(100%);
+    left: -10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    padding-top: 20px;
+
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+
+    background-color: rgba(245, 247, 248, 1);
+
+    border-radius:10px;
+    box-shadow: 5px 8px 10px 1px rgba(0, 0, 0, .1);
+    
+}
+
+nav .links .linkobj .services-popup.visible {
+    display: grid;
+}
+
+nav .links .linkobj .services-popup .service-link svg { width: 18px; height: 18px;}
+
+
+/* search */
+nav .search-field {
+    position: absolute;
+    top: 60px; left: 0px;
+    width: calc(100% - 100px);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100px;
+    padding: 30px 50px;
+    z-index: 100;
+
+    background-color: rgb(245, 247, 248);
+}
+
+nav .search-field.visible {
+    display: flex;
+}
+
+nav .search-results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav .search-field h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+nav .search-field span {
+    font-weight: 600;
+}

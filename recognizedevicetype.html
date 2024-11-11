@@ -1,1 +1,1 @@
-<script>if(/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){window.location.pathname='mobile/index.html'}else{window.location.pathname='desktop/index.html'}</script>
+<script>let next=window.location.search.split('=')[1];if(!next){next='index.html'}if(/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){window.location.pathname=`mobile/${next}`;}else{window.location.pathname=`desktop/${next}`;}</script>

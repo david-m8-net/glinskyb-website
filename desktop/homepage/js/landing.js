@@ -32,9 +32,11 @@ window.addEventListener('resize', () => {
 
 
 // best products
+
 const products = document.getElementsByClassName('product-obj')
 Array.from(products).forEach((product) => {
     product.addEventListener('click', () => {
-        window.location.pathname = product.children[2].children[0].getAttribute('href');
+        // serv_links are from desktop/global/js/nav.js
+        window.location.pathname = serv_links[product.children[1].children[0].textContent];
     })
 })

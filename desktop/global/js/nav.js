@@ -1,3 +1,7 @@
+let device_type;
+if(/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {device_type='mobile';
+} else {device_type='desktop'; }
+
 // animating link sections in navbar
 const navbar = document.getElementById('nav');
 
@@ -10,11 +14,11 @@ const services = document.getElementsByClassName('service-link')
 
 // logo - link
 document.getElementById('navlogo').addEventListener('click', () => {
-    window.location.href = 'https://dy4tpgf2dyah4.cloudfront.net/index.html'
+    window.location.href = 'https://glinskyhq.com'
 })
 
 document.getElementById('navaboutlink').addEventListener('click', () => {
-    window.location.pathname = '/about.html'
+    window.location.pathname = `${device_type}/about.html`
 })
 
 
@@ -42,15 +46,15 @@ for (let i = 0; i < links.length; i++) {
     })
 }
 
-// services
+// service
 
 const serv_links = {
-    'SalesBoost Program': 'sales.html',
-    'ClientGrow System': 'client.html',
-    'Digital Marketing': 'digitalmarketing.html',
-    'Staffing Management': 'staffing.html',
-    'Technical Consulting': 'techconsulting.html',
-    'Digital Banking': 'digitalbanking.html'
+    'SalesBoost Program': `${device_type}/sales.html`,
+    'ClientGrow System': `${device_type}/client.html`,
+    'Digital Marketing': `${device_type}/digitalmarketing.html`,
+    'Staffing Management': `${device_type}/staffing.html`,
+    'Technical Consulting': `${device_type}/techconsulting.html`,
+    'Digital Banking': `${device_type}/digitalbanking.html`
 }
 
 for (let i = 0; i < services.length; i++) {
@@ -69,7 +73,11 @@ for (let i = 0; i < services.length; i++) {
     })
     
     services[i].addEventListener('click', () => {
-        window.location.pathname = serv_links[services[i].children[0].textContent]
+        if (services[i].hasAttribute('redirect')) {
+            window.location.pathname = `${device_type}/${services[i].getAttribute('redirect')}`
+        } else {
+            window.location.pathname = serv_links[services[i].children[0].textContent]
+        }
 
     })
     

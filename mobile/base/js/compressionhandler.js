@@ -6,7 +6,6 @@ function userperspectivechanged() {
         if (!image.getAttribute('src') & (rect.top > -image.clientHeight && rect.bottom > image.clientHeight)) {
             image.setAttribute('src', image.getAttribute('src0'));
         }
-        console.log(rect.top > -image.clientHeight && rect.bottom > image.clientHeight, rect.bottom, image.getAttribute('src0'))
     })
 }
 

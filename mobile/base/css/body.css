@@ -38,17 +38,17 @@ body {
 
 /* firstdisplayanimation */
 .firstdisplayanimated {
-    animation: firstdisplayanimation .8s ease forwards;
+    animation: firstdisplayanimation .6s ease forwards;
 }
 
 @keyframes firstdisplayanimation {
     0% {
-        transform: scale(0.8) var(--transform, scale(0.95));
+        transform: scale(0.8) var(--transform, scale(0.99));
         opacity: 0;
-        filter: blur(40px);
+        filter: blur(20px);
     }
 
-    80% {
+    60% {
         transform: scale(1.05) var(--transform, scale(1));
     }
     

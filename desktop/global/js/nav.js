@@ -14,7 +14,7 @@ const services = document.getElementsByClassName('service-link')
 
 // logo - link
 document.getElementById('navlogo').addEventListener('click', () => {
-    window.location.href = 'https://glinskyhq.com'
+    window.location.href = 'http://glinskyhq.com'
 })
 
 document.getElementById('navaboutlink').addEventListener('click', () => {

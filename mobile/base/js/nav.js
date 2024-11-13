@@ -4,10 +4,9 @@ let is_menu_closed = true;
 const menubutton = document.getElementById('moremenubutton');
 const menudisplay = document.getElementById('moremenu-display');
 
-// automating more memu
-
-
-
+document.getElementsByClassName('logo')[0].addEventListener('click', () => {
+    window.location.href = 'http://glinskyhq.com';
+})
 
 function togglemenu() {
     if (is_menu_closed) {
